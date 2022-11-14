@@ -1,4 +1,4 @@
-package br.com.fia.fintech.dao;
+package br.com.fiap.fintech.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,13 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.fiap.fintech.jdbc.ConexaoBanco;
 import br.com.fiap.fintech.model.UsuarioModel;
 
-public class UsuarioDAO extends ConexaoBanco {
-
-	public UsuarioDAO(){
-		getConexao();
-	}
+public class UsuarioDAOImpl extends ConexaoBanco implements UsuarioDAO{
 	
 	public UsuarioModel findById (int codigo) {
 		

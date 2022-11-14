@@ -1,4 +1,4 @@
-package br.com.fia.fintech.dao;
+package br.com.fiap.fintech.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,9 +8,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import br.com.fiap.fintech.jdbc.ConexaoBanco;
 import br.com.fiap.fintech.model.RecebidoModel;
 
-public class RecebidoDAO extends ConexaoBanco{
+public class RecebidoDAOImpl extends ConexaoBanco implements RecebidoDAO{
 
 	public RecebidoModel findById(int codigo){
 		

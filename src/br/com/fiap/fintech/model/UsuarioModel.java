@@ -1,6 +1,10 @@
 package br.com.fiap.fintech.model;
 
-public class UsuarioModel {
+import java.io.Serializable;
+
+public class UsuarioModel implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	
 	private int cd_usuario;
 	private String nm_nome;

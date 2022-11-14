@@ -1,7 +1,10 @@
 package br.com.fiap.fintech.model;
 
-public class BancoModel {
+import java.io.Serializable;
+
+public class BancoModel implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private int cd_usuario;
 	private int nr_conta;
 	private int nr_agencia;

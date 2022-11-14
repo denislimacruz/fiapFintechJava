@@ -1,9 +1,12 @@
 package br.com.fiap.fintech.model;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class InvestimentoModel {
+public class InvestimentoModel implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 
 	private int cd_usuario;
 	private int cd_investimento;

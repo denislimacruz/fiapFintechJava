@@ -1,4 +1,4 @@
-package br.com.fia.fintech.dao;
+package br.com.fiap.fintech.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,9 +8,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import br.com.fiap.fintech.jdbc.ConexaoBanco;
 import br.com.fiap.fintech.model.GastoModel;
 
-public class GastoDAO extends ConexaoBanco{
+public class GastoDAOImpl extends ConexaoBanco implements GastoDAO{
 
 	public GastoModel findById(int codigo) {
 		
